@@ -8,6 +8,8 @@ public class BankAccount {
     private LocalDate creationDate;
 
     public BankAccount(Person owner, double balance){
+        if(balance < 0)
+            throw new IllegalArgumentException("balance can't be negative");
         this.owner = owner;
         this.balance = balance;
         this.creationDate = LocalDate.now();
