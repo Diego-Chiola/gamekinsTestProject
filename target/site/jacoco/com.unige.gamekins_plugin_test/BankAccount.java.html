@@ -8,39 +8,41 @@ public class BankAccount {
     private LocalDate creationDate;
 
 <span class="fc" id="L10">    public BankAccount(Person owner, double balance){</span>
-<span class="fc" id="L11">        this.owner = owner;</span>
-<span class="fc" id="L12">        this.balance = balance;</span>
-<span class="fc" id="L13">        this.creationDate = LocalDate.now();</span>
-<span class="fc" id="L14">    }</span>
+<span class="pc bpc" id="L11" title="1 of 2 branches missed.">        if(balance &lt; 0)</span>
+<span class="fc" id="L12">            throw new IllegalArgumentException(&quot;balance can't be negative&quot;);</span>
+<span class="nc" id="L13">        this.owner = owner;</span>
+<span class="nc" id="L14">        this.balance = balance;</span>
+<span class="nc" id="L15">        this.creationDate = LocalDate.now();</span>
+<span class="nc" id="L16">    }</span>
 
-<span class="nc" id="L16">    public BankAccount(Person owner) {</span>
-<span class="nc" id="L17">        this.owner = owner;</span>
-<span class="nc" id="L18">        this.balance = 0;</span>
-<span class="nc" id="L19">        this.creationDate = LocalDate.now();</span>
-<span class="nc" id="L20">    }</span>
+<span class="nc" id="L18">    public BankAccount(Person owner) {</span>
+<span class="nc" id="L19">        this.owner = owner;</span>
+<span class="nc" id="L20">        this.balance = 0;</span>
+<span class="nc" id="L21">        this.creationDate = LocalDate.now();</span>
+<span class="nc" id="L22">    }</span>
 
-<span class="nc" id="L22">    public BankAccount(){}</span>
+<span class="nc" id="L24">    public BankAccount(){}</span>
 
     public double deposit(double amount) {
-<span class="nc" id="L25">        return this.balance += amount;</span>
+<span class="nc" id="L27">        return this.balance += amount;</span>
     }
 
     public double withdraw(double amount) throws Exception {
-<span class="nc bnc" id="L29" title="All 2 branches missed.">        if(this.balance - amount &lt; 0)</span>
-<span class="nc" id="L30">            throw new Exception(&quot;Invalid operation&quot;);</span>
-<span class="nc" id="L31">        return this.balance -= amount; </span>
+<span class="nc bnc" id="L31" title="All 2 branches missed.">        if(this.balance - amount &lt; 0)</span>
+<span class="nc" id="L32">            throw new Exception(&quot;Invalid operation&quot;);</span>
+<span class="nc" id="L33">        return this.balance -= amount; </span>
     }
 
     public void changeOwner(Person newOwner) throws Exception{
-<span class="nc bnc" id="L35" title="All 2 branches missed.">        if(newOwner == null)</span>
-<span class="nc" id="L36">            throw new Exception(&quot;The new owner can't be null&quot;);</span>
-<span class="nc" id="L37">        this.owner = newOwner;</span>
-<span class="nc" id="L38">    }</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">        if(newOwner == null)</span>
+<span class="nc" id="L38">            throw new Exception(&quot;The new owner can't be null&quot;);</span>
+<span class="nc" id="L39">        this.owner = newOwner;</span>
+<span class="nc" id="L40">    }</span>
 
-<span class="fc" id="L40">    public double getBalance() { return balance; }</span>
+<span class="nc" id="L42">    public double getBalance() { return balance; }</span>
 
-<span class="nc" id="L42">    public Person getOwner() { return owner; }</span>
+<span class="nc" id="L44">    public Person getOwner() { return owner; }</span>
 
-<span class="nc" id="L44">    public LocalDate getCreationDate() { return creationDate; }</span>
+<span class="nc" id="L46">    public LocalDate getCreationDate() { return creationDate; }</span>
 }
-</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
