@@ -1,4 +1,4 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 Unige-test,com.unige.gamekins_plugin_test,BankAccount,73,11,5,1,21,3,11,1,8,1
 Unige-test,com.unige.gamekins_plugin_test,Person,43,18,8,0,12,7,10,2,6,2
-Unige-test,com.unige.gamekins_plugin_test,Film,15,0,0,0,6,0,3,0,3,0
+Unige-test,com.unige.gamekins_plugin_test,Film,18,0,0,0,7,0,3,0,3,0
