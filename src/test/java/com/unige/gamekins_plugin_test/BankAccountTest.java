@@ -12,7 +12,7 @@ public class BankAccountTest {
         double balance = -100;
         assertThrows(IllegalArgumentException.class, () -> {
             new BankAccount(person, balance);
-        });]
+        });
     }
 
     @Test
