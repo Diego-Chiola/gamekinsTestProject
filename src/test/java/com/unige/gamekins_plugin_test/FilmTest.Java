@@ -9,7 +9,7 @@ public class FilmTest{
     @Test
     public void getTitleTest(){
         Film film = new Film("Io sono Leggenda", "Jack Sparrow", "Kubrick");
-        String expected = "Jack Sparrow";
+        String expected = "Io sono Leggenda";
         assertEquals(expected, film.getTitle());
     }
 }
