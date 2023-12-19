@@ -28,9 +28,11 @@ public class BankAccount {
     }
 
     public double withdraw(double amount) throws Exception {
+
         if(this.balance - amount < 0)
             throw new Exception("Invalid operation");
-        return this.balance -= amount; 
+        this.balance -= amount;
+        return this.balance; 
     }
 
     public void changeOwner(Person newOwner) throws Exception{
