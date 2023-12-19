@@ -20,10 +20,35 @@
 			<version>5.9.1</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>1.15.3</version>
+		</dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
+			<!--https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.3.1</version>
+				<configuration>
+					<configLocation>sun_checks.xml</configLocation>
+					<includeTestSourceDirectory>true</includeTestSourceDirectory>
+				</configuration>
+				<executions>
+					<!-- attached to Maven compile phase -->
+					<execution>
+						<id>checkstyle-report</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>checkstyle</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>

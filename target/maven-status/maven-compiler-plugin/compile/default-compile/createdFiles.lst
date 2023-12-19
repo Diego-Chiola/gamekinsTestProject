@@ -1,3 +1,6 @@
 com\unige\gamekins_plugin_test\Film.class
+com\unige\gamekins_plugin_test\parser\package-info.class
+com\unige\gamekins_plugin_test\package-info.class
 com\unige\gamekins_plugin_test\Person.class
 com\unige\gamekins_plugin_test\BankAccount.class
+com\unige\gamekins_plugin_test\parser\CheckStyle.class
