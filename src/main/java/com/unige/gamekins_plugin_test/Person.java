@@ -36,5 +36,5 @@ public class Person {
 
     public int getAge() { return age; }
 
-    private boolean isMarried() { return this.getSpouse() != null ? true : false; }
+    private boolean isMarried() { return this.getSpouse() != null; }
 }
