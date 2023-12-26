@@ -23,6 +23,7 @@ public class BankAccount {
 
     public BankAccount(){}
 
+    
     public double deposit(double amount) {
         return this.balance += amount;
     }
