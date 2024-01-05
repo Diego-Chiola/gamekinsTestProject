@@ -19,6 +19,9 @@ public class ParserTest {
         var elements = CheckStyle.parseTable(JsoupDoc);
         assertNotNull(elements);
     }
+
+
+    
     @Test
     public void parseTableTest2(){
         var checkstyle_doc = new CheckStyle();
