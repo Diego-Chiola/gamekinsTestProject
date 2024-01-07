@@ -4,8 +4,8 @@ package com.unige.gamekins_plugin_test;
  *
  * */
 public class Film {
-    private String title;
-    private String protagonist;
+    private final String title;
+    private final String protagonist;
     private final String director;
 
 
