@@ -6,7 +6,7 @@ package com.unige.gamekins_plugin_test;
 public class Film {
     private String title;
     private String protagonist;
-    private String director;
+    private final String director;
 
 
     
