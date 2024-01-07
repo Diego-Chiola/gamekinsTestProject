@@ -34,7 +34,7 @@ import java.util.Objects;
             //System.out.println(&quot;parent:&quot; + anchorElement);
 <span class="fc" id="L35">            Element targetElement = Objects.requireNonNull(anchorElement).nextElementSibling();</span>
             //System.out.println(&quot;target element:&quot; + targetElement);
-<span class="fc" id="L37">            return targetElement.select(&quot;tr&quot;);</span>
+<span class="fc" id="L37">            return Objects.requireNonNull(targetElement).select(&quot;tr&quot;);</span>
         }
 <span class="nc" id="L39">        return null;</span>
     }

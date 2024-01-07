@@ -4,18 +4,20 @@
  *
  * */
 public class Film {
-    private String title;
-    private String protagonist;
-    private String director;
+    private final String title;
+    private final String protagonist;
+    private final String director;
 
-<span class="nc" id="L11">    public Film(String title, String protagonist, String director){</span>
-<span class="nc" id="L12">        this.title = title;</span>
-<span class="nc" id="L13">        this.protagonist = protagonist;</span>
-<span class="nc" id="L14">        this.director = director;</span>
-<span class="nc" id="L15">    }</span>
 
-<span class="nc" id="L17">    public String getTitle(){ return title; }</span>
+    
+<span class="fc" id="L13">    public Film(String aTitle, String aProtagonist, String aDirector){</span>
+<span class="fc" id="L14">        this.title = aTitle;</span>
+<span class="fc" id="L15">        this.protagonist = aProtagonist;</span>
+<span class="fc" id="L16">        this.director = aDirector;</span>
+<span class="fc" id="L17">    }</span>
 
-<span class="nc" id="L19">    public String getProtagonist(){ return protagonist; }</span>
+<span class="fc" id="L19">    public String getTitle(){ return title; }</span>
+
+<span class="nc" id="L21">    public String getProtagonist(){ return protagonist; }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
