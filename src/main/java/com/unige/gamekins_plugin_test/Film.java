@@ -10,10 +10,10 @@ public class Film {
 
 
     
-    public Film(String title, String protagonist, String director){
-        this.title = title;
-        this.protagonist = protagonist;
-        this.director = director;
+    public Film(String aTitle, String aProtagonist, String aDirector){
+        this.title = aTitle;
+        this.protagonist = aProtagonist;
+        this.director = aDirector;
     }
 
     public String getTitle(){ return title; }
