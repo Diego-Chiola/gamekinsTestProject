@@ -9,7 +9,12 @@ public class Film {
     private final String director;
 
 
-    
+    /**
+     *
+     * @param aTitle
+     * @param aProtagonist
+     * @param aDirector
+     */
     public Film(String aTitle, String aProtagonist, String aDirector){
         this.title = aTitle;
         this.protagonist = aProtagonist;
