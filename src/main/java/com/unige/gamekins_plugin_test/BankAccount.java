@@ -30,6 +30,12 @@ public class BankAccount {
         return this.balance += amount;
     }
 
+    /**
+     *
+     * @param amount
+     * @return
+     * @throws Exception
+     */
     public double withdraw(double amount) throws Exception {
 
         if(this.balance - amount < 0)
