@@ -25,12 +25,13 @@
 			<artifactId>jsoup</artifactId>
 			<version>1.15.3</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-pmd-plugin -->
 	</dependencies>
 
 	<build>
 		<plugins>
 			<!--https://maven.apache.org/plugins/maven-checkstyle-plugin/index.html -->
-			<plugin>
+			<!--<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
 				<version>3.3.1</version>
@@ -38,9 +39,9 @@
 					<configLocation>sun_checks.xml</configLocation>
 					<includeTestSourceDirectory>true</includeTestSourceDirectory>
 				</configuration>
-				<executions>
+				<executions>-->
 					<!-- attached to Maven compile phase -->
-					<execution>
+					<!--<execution>
 						<id>checkstyle-report</id>
 						<phase>compile</phase>
 						<goals>
@@ -48,7 +49,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -65,6 +66,27 @@
 						<phase>test</phase>
 						<goals>
 							<goal>report</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>3.21.0</version>
+				<configuration>
+					<linkXRef>false</linkXRef>
+					<targetJdk>17</targetJdk>
+					<rulesets>
+						<ruleset>src/main/resources/ruleset.xml</ruleset>
+					</rulesets>
+				</configuration>
+				<executions>
+					<execution>
+						<id>pmd</id>
+						<phase>compile</phase>
+						<goals>
+							<goal>pmd</goal>
 						</goals>
 					</execution>
 				</executions>
