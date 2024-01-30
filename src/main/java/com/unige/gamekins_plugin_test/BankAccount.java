@@ -44,7 +44,7 @@ public class BankAccount {
         return this.balance; 
     }
 
-    public void changeProprietario(Person newOwner) throws Exception{
+    public void changeOwner(Person newOwner) throws Exception{
         if(newOwner == null)
             throw new Exception("The new owner can't be null");
         this.owner = newOwner;
