@@ -8,7 +8,6 @@ public class Film {
     private final String protagonist;
     private final String director;
 
-
     /**
      *
      * @param aTitle

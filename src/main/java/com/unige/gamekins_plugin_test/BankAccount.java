@@ -34,12 +34,12 @@ public class BankAccount {
      *
      * @param amount
      * @return
-     * @throws Exception
+     * @throws IllegalArgumentException
      */
-    public double withdraw(double amount) throws Exception {
+    public double withdraw(double amount) throws IllegalArgumentException {
 
         if(this.balance - amount < 0)
-            throw new Exception("Invalid operation");
+            throw new IllegalArgumentException("Invalid operation");
         this.balance -= amount;
         return this.balance; 
     }
