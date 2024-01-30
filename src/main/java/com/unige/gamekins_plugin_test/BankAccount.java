@@ -34,17 +34,17 @@ public class BankAccount {
      *
      * @param amount
      * @return
-     * @throws IllegalArgumentException
+     * @throws Exception
      */
-    public double withdraw(double amount) throws IllegalArgumentException {
+    public double withdraw(double amount) throws Exception {
 
         if(this.balance - amount < 0)
-            throw new IllegalArgumentException("Invalid operation");
+            throw new Exception("Invalid operation");
         this.balance -= amount;
         return this.balance; 
     }
 
-    public void changeOwner(Person newOwner) throws Exception{
+    public void changeProprietario(Person newOwner) throws Exception{
         if(newOwner == null)
             throw new Exception("The new owner can't be null");
         this.owner = newOwner;

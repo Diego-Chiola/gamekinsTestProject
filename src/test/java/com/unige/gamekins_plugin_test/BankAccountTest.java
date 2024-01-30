@@ -21,7 +21,7 @@ public class BankAccountTest {
         Person person2 = new Person("Pluto", "Baudo", 18);
         BankAccount account = new BankAccount(person1);
         Person expected = new Person("Pluto", "Baudo", 18);
-        account.changeOwner(person2);
+        account.changeProprietario(person2);
         assertEquals(expected.getFirstname(), account.getOwner().getFirstname());
     }
 }
