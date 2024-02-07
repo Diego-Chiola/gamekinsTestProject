@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-01-26T23:47:24.301">
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-01-31T01:08:41.561">
 <file name="C:\Users\chiol\Desktop\università\Tirocinio\gamekinsTestProject\src\main\java\com\unige\gamekins_plugin_test\BankAccount.java">
 <violation beginline="12" endline="12" begincolumn="13" endcolumn="76" rule="ControlStatementBraces" ruleset="Code Style" package="com.unige.gamekins_plugin_test" class="BankAccount" method="BankAccount" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#controlstatementbraces" priority="3">
 This statement should have braces
@@ -27,10 +27,10 @@ This statement should have braces
 <violation beginline="6" endline="27" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="com.unige.gamekins_plugin_test" class="Film" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
 Avoid short class names like Film
 </violation>
-<violation beginline="9" endline="9" begincolumn="26" endcolumn="33" rule="UnusedPrivateField" ruleset="Best Practices" package="com.unige.gamekins_plugin_test" class="Film" variable="director" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+<violation beginline="10" endline="10" begincolumn="26" endcolumn="33" rule="UnusedPrivateField" ruleset="Best Practices" package="com.unige.gamekins_plugin_test" class="Film" variable="director" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
 Avoid unused private fields such as 'director'.
 </violation>
-<violation beginline="9" endline="9" begincolumn="19" endcolumn="34" rule="SingularField" ruleset="Design" package="com.unige.gamekins_plugin_test" class="Film" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#singularfield" priority="3">
+<violation beginline="10" endline="10" begincolumn="19" endcolumn="34" rule="SingularField" ruleset="Design" package="com.unige.gamekins_plugin_test" class="Film" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#singularfield" priority="3">
 Perhaps 'director' could be replaced by a local variable.
 </violation>
 </file>
@@ -54,36 +54,55 @@ The instance method name 'Marry' doesn't match '[a-z][a-zA-Z0-9]*'
 This statement should have braces
 </violation>
 </file>
-<file name="C:\Users\chiol\Desktop\università\Tirocinio\gamekinsTestProject\src\main\java\com\unige\gamekins_plugin_test\parser\CheckStyle.java">
-<violation beginline="12" endline="41" begincolumn="8" endcolumn="1" rule="AtLeastOneConstructor" ruleset="Code Style" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#atleastoneconstructor" priority="3">
-Each class should declare at least one constructor
+<file name="C:\Users\chiol\Desktop\università\Tirocinio\gamekinsTestProject\src\main\java\com\unige\gamekins_plugin_test\client\Console.java">
+<violation beginline="5" endline="10" begincolumn="22" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="com.unige.gamekins_plugin_test.client" class="Console" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#useutilityclass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
 </violation>
-<violation beginline="14" endline="14" begincolumn="26" endcolumn="29" rule="FinalFieldCouldBeStatic" ruleset="Design" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" variable="path" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
-This final field could be made static
+<violation beginline="7" endline="7" begincolumn="9" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.unige.gamekins_plugin_test.client" class="Console" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'aService' could be declared final
 </violation>
-<violation beginline="17" endline="17" begincolumn="13" endcolumn="39" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="createDocument" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-Local variable 'input' could be declared final
+<violation beginline="8" endline="8" begincolumn="13" endcolumn="17" rule="UnusedLocalVariable" ruleset="Best Practices" package="com.unige.gamekins_plugin_test.client" class="Console" method="main" variable="atype" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'atype'.
 </violation>
-<violation beginline="20" endline="20" begincolumn="13" endcolumn="31" rule="AvoidPrintStackTrace" ruleset="Best Practices" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="createDocument" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#avoidprintstacktrace" priority="3">
-Avoid printStackTrace(); use a logger call instead.
+<violation beginline="8" endline="8" begincolumn="9" endcolumn="38" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.unige.gamekins_plugin_test.client" class="Console" method="main" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'atype' could be declared final
 </violation>
-<violation beginline="31" endline="31" begincolumn="9" endcolumn="119" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="parseTable" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-Local variable 'anchorElement' could be declared final
+</file>
+<file name="C:\Users\chiol\Desktop\università\Tirocinio\gamekinsTestProject\src\main\java\com\unige\gamekins_plugin_test\data\Type.java">
+<violation beginline="5" endline="15" begincolumn="8" endcolumn="1" rule="ShortClassName" ruleset="Code Style" package="com.unige.gamekins_plugin_test.data" class="Type" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortclassname" priority="4">
+Avoid short class names like Type
 </violation>
-<violation beginline="31" endline="31" begincolumn="33" endcolumn="119" rule="LawOfDemeter" ruleset="Design" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="parseTable" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-Potential violation of Law of Demeter (method chain calls)
+<violation beginline="6" endline="6" begincolumn="17" endcolumn="18" rule="UnusedPrivateField" ruleset="Best Practices" package="com.unige.gamekins_plugin_test.data" class="Type" variable="id" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'id'.
 </violation>
-<violation beginline="35" endline="35" begincolumn="13" endcolumn="94" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="parseTable" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
-Local variable 'targetElement' could be declared final
+<violation beginline="6" endline="6" begincolumn="17" endcolumn="18" rule="ShortVariable" ruleset="Code Style" package="com.unige.gamekins_plugin_test.data" class="Type" variable="id" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like id
 </violation>
-<violation beginline="35" endline="35" begincolumn="37" endcolumn="94" rule="LawOfDemeter" ruleset="Design" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="parseTable" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-Potential violation of Law of Demeter (method chain calls)
+<violation beginline="6" endline="6" begincolumn="13" endcolumn="19" rule="SingularField" ruleset="Design" package="com.unige.gamekins_plugin_test.data" class="Type" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'id' could be replaced by a local variable.
 </violation>
-<violation beginline="37" endline="37" begincolumn="20" endcolumn="69" rule="LawOfDemeter" ruleset="Design" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="parseTable" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#lawofdemeter" priority="3">
-Potential violation of Law of Demeter (method chain calls)
+<violation beginline="6" endline="6" begincolumn="17" endcolumn="18" rule="ImmutableField" ruleset="Design" package="com.unige.gamekins_plugin_test.data" class="Type" variable="id" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'id' could be made final; it is only initialized in the declaration or constructor.
 </violation>
-<violation beginline="39" endline="39" begincolumn="16" endcolumn="19" rule="ReturnEmptyCollectionRatherThanNull" ruleset="Error Prone" package="com.unige.gamekins_plugin_test.parser" class="CheckStyle" method="parseTable" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_errorprone.html#returnemptycollectionratherthannull" priority="1">
-Return an empty collection rather than null.
+<violation beginline="8" endline="8" begincolumn="21" endcolumn="22" rule="ShortVariable" ruleset="Code Style" package="com.unige.gamekins_plugin_test.data" class="Type" method="Type" variable="id" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#shortvariable" priority="3">
+Avoid variables with short names like id
+</violation>
+<violation beginline="13" endline="13" begincolumn="13" endcolumn="25" rule="UnusedLocalVariable" ruleset="Best Practices" package="com.unige.gamekins_plugin_test.data" class="Type" method="aMethod" variable="uslessService" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedlocalvariable" priority="3">
+Avoid unused local variables such as 'uslessService'.
+</violation>
+<violation beginline="13" endline="13" begincolumn="9" endcolumn="56" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="com.unige.gamekins_plugin_test.data" class="Type" method="aMethod" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 'uslessService' could be declared final
+</violation>
+</file>
+<file name="C:\Users\chiol\Desktop\università\Tirocinio\gamekinsTestProject\src\main\java\com\unige\gamekins_plugin_test\server\Service.java">
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="23" rule="UnusedPrivateField" ruleset="Best Practices" package="com.unige.gamekins_plugin_test.server" class="Service" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'name'.
+</violation>
+<violation beginline="6" endline="6" begincolumn="13" endcolumn="24" rule="SingularField" ruleset="Design" package="com.unige.gamekins_plugin_test.server" class="Service" variable="VariableDeclaratorId" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#singularfield" priority="3">
+Perhaps 'name' could be replaced by a local variable.
+</violation>
+<violation beginline="6" endline="6" begincolumn="20" endcolumn="23" rule="ImmutableField" ruleset="Design" package="com.unige.gamekins_plugin_test.server" class="Service" variable="name" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Private field 'name' could be made final; it is only initialized in the declaration or constructor.
 </violation>
 </file>
 </pmd>

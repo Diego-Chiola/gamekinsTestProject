@@ -1,6 +1,7 @@
-com\unige\gamekins_plugin_test\parser\package-info.class
+com\unige\gamekins_plugin_test\data\Type.class
 com\unige\gamekins_plugin_test\Person.class
-com\unige\gamekins_plugin_test\parser\CheckStyle.class
+com\unige\gamekins_plugin_test\server\Service.class
 com\unige\gamekins_plugin_test\Film.class
 com\unige\gamekins_plugin_test\package-info.class
 com\unige\gamekins_plugin_test\BankAccount.class
+com\unige\gamekins_plugin_test\client\Console.class

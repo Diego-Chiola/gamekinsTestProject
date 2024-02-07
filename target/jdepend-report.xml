@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="com.unige.gamekins_plugin_test">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>3</Ce>
+                <A>0.25</A>
+                <I>1</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="package-info.java">
+                    com.unige.gamekins_plugin_test.package-info
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BankAccount.java">
+                    com.unige.gamekins_plugin_test.BankAccount
+                </Class>
+                <Class sourceFile="Film.java">
+                    com.unige.gamekins_plugin_test.Film
+                </Class>
+                <Class sourceFile="Person.java">
+                    com.unige.gamekins_plugin_test.Person
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.time</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.unige.gamekins_plugin_test.client">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Console.java">
+                    com.unige.gamekins_plugin_test.client.Console
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.unige.gamekins_plugin_test.server</Package>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.unige.gamekins_plugin_test.data">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>0.67</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Type.java">
+                    com.unige.gamekins_plugin_test.data.Type
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.unige.gamekins_plugin_test.server</Package>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.unige.gamekins_plugin_test.server</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.unige.gamekins_plugin_test.server">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>0.5</I>
+                <D>0.5</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Service.java">
+                    com.unige.gamekins_plugin_test.server.Service
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.unige.gamekins_plugin_test.data</Package>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.unige.gamekins_plugin_test.client</Package>
+                <Package>com.unige.gamekins_plugin_test.data</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.time">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="com.unige.gamekins_plugin_test.client">
+            <Package>com.unige.gamekins_plugin_test.server</Package>
+            <Package>com.unige.gamekins_plugin_test.data</Package>
+            <Package>com.unige.gamekins_plugin_test.server</Package>
+        </Package>
+
+        <Package Name="com.unige.gamekins_plugin_test.data">
+            <Package>com.unige.gamekins_plugin_test.server</Package>
+            <Package>com.unige.gamekins_plugin_test.data</Package>
+        </Package>
+
+        <Package Name="com.unige.gamekins_plugin_test.server">
+            <Package>com.unige.gamekins_plugin_test.data</Package>
+            <Package>com.unige.gamekins_plugin_test.server</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>
